@@ -139,11 +139,7 @@ def excluir_cadastro_id():
 
 #excluir_cadastro_id()
 
-
-#Update
-#Update
-
-import json 
+#UPDATE
 
 def alterar_nome():
     with open('database.json' , 'r') as trans: 
@@ -190,5 +186,5 @@ def alterar_nome():
     
  
         
-alterar_nome()
+#alterar_nome()
 
