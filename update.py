@@ -19,7 +19,7 @@ def alterar_nome():
             2- Negado''')
             permissao_nova = None
                 
-            while permissao_nova not in ('1','2',' '):
+            while permissao_nova not in ('1','2',''):
                 permissao_nova = input('Digite permissão: ')
                 if permissao_nova == '1': 
                     print('Permitido')
