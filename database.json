@@ -1,0 +1,14 @@
+[
+	{
+		"nome": "Bia",
+		"id_cartao": "2345P",
+		"cargo": "Aluna",
+		"permissao": "Permitida"
+	},
+	{
+		"nome": "João",
+		"id_cartao": "W24AD",
+		"cargo": "Professor",
+		"permissao": "Negada"
+	}
+]
