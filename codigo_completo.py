@@ -20,7 +20,7 @@ def cadastro():
         permissao_menu= print('''PERMISSÃO 
         1- Permitido 
         2- Negado''') # mostrando as opções para a variavel permissão
-        permissao= ''
+        permissao = None
         while permissao != '1' and permissao != '2': # conferindo se o usuário tem permissão ou não 
             permissao = input('Digite permissão: ')
             
@@ -39,7 +39,7 @@ def cadastro():
          json.dump(itens_cadastro, trans, indent= '\t', ensure_ascii=False) 
 
 
-#cadastro()
+cadastro()
     
     
 
@@ -93,14 +93,13 @@ def visualizar_cadastrado_id():
 
 #EXCLUIR USUÁRIO
 
-# Excluindo o usuário pelo nome
 
 # Excluindo o usuário pelo nome
 def excluir_cadastro_nome(): 
     with open('database.json' , 'r') as trans: 
         itens_cadastro = json.load(trans) 
     
-    deletar_pessoa_nome = input('Digite o nome a ser excluído: ')
+    deletar_pessoa_nome = input('Digite o nome a ser excluído: ').strip()
     
     for p in range(len(itens_cadastro)) :
         if  itens_cadastro[p]['nome'] ==  deletar_pessoa_nome: 
@@ -115,7 +114,7 @@ def excluir_cadastro_nome():
         json.dump(itens_cadastro, trans, indent='\t')
         
 
-excluir_cadastro_nome()
+#excluir_cadastro_nome()
 
 #Excluindo o usuário pelo id do cartão
 def excluir_cadastro_id(): 
@@ -138,6 +137,7 @@ def excluir_cadastro_id():
        
 
 #excluir_cadastro_id()
+
 
 #UPDATE
 
@@ -182,9 +182,6 @@ def alterar_nome():
     else: 
         print('Id não cadastrado no sistema!')
         
-        
+                    
     
- 
-        
 #alterar_nome()
-

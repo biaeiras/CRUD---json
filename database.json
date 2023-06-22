@@ -1,14 +1,8 @@
 [
 	{
-		"nome": "Bia",
-		"id_cartao": "2345P",
+		"nome": "Bianca",
+		"id_cartao": "1234",
 		"cargo": "Aluna",
-		"permissao": "Permitida"
-	},
-	{
-		"nome": "João",
-		"id_cartao": "W24AD",
-		"cargo": "Professor",
-		"permissao": "Negada"
+		"permissao": "Permitido"
 	}
 ]
